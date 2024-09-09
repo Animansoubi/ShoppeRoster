@@ -14,11 +14,11 @@ class NavigationManagerImp @Inject constructor() : NavigationManager {
 
     private lateinit var navHostController: NavHostController
     override fun setUp(navHostController: NavHostController) {
-        this.navHostController = this.navHostController
+        this.navHostController = navHostController
     }
 
     override fun navigateToIntro() {
-        TODO("Not yet implemented")
+       navHostController.navigate(Destinations.Intro)
     }
 
     override fun navigateToSignInScreen() {
