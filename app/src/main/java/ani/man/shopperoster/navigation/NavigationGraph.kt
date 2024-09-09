@@ -12,6 +12,7 @@ fun NavigationGraph(navController: NavHostController) {
         navController = navController,
         startDestination = Destinations.Intro.route,
     ) {
+        
         composable(Destinations.Intro.route) {
             IntroScreen()
         }
